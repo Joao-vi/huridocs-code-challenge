@@ -15,10 +15,7 @@ export class Labyrinth {
   constructor(private readonly cells: Cells) {}
 
   getCell(coordinate: Coordinate): Cell {
-    const isXValid = coordinate.x >= 0 && coordinate.x < this.cells.length
-    const isYValid = coordinate.y >= 0 && coordinate.y < this.cells[0].length // Each row in this Labyrinth have the same amount of Columns (Y)
-
-    if (!isXValid || !isYValid) return ''
+    if (!this.isCoordinateValid(coordinate)) return ''
 
     return this.cells[coordinate.x][coordinate.y]
   }
@@ -31,5 +28,12 @@ export class Labyrinth {
     }
 
     throw new CellNotFoundError(cell)
+  }
+
+  isCoordinateValid(coordinate: Coordinate): boolean {
+    const isXValid = coordinate.x >= 0 && coordinate.x < this.cells.length
+    const isYValid = coordinate.y >= 0 && coordinate.y < this.cells[0].length // Each row in this Labyrinth have the same amount of Columns (Y)
+
+    return isXValid && isYValid
   }
 }
