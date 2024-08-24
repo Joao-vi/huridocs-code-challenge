@@ -1,4 +1,4 @@
-import { Labyrinth } from '../labyrinth'
+import { Labyrinth } from '../../models/labyrinth'
 import { Distance } from './path'
 
 type PathNotFound = -1

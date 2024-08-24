@@ -1,5 +1,5 @@
-import { Coordinate } from '../coordinate'
-import { Direction } from '../direction'
+import { Coordinate } from '../../models/coordinate'
+import { Direction } from '../../models/direction'
 
 export type Distance = number
 
