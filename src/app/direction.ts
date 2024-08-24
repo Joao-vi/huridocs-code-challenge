@@ -2,6 +2,8 @@ import { Coordinate } from './coordinate'
 
 export type Direction = Coordinate
 
+export type DirectionTypes = keyof typeof DIRECTIONS
+
 const UP: Direction = { x: -1, y: 0 }
 const DOWN: Direction = { x: 1, y: 0 }
 const LEFT: Direction = { x: 0, y: -1 }
