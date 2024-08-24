@@ -28,6 +28,6 @@ export class Path {
     this.props.y += direction.y
     this.props.x += direction.x
 
-    this.props.distance += direction.x + direction.y
+    this.props.distance += 1
   }
 }
