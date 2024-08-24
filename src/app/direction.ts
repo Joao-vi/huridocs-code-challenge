@@ -1,6 +1,6 @@
 import { Coordinate } from './coordinate'
 
-type Direction = Coordinate
+export type Direction = Coordinate
 
 const UP: Direction = { x: -1, y: 0 }
 const DOWN: Direction = { x: 1, y: 0 }

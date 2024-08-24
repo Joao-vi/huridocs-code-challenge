@@ -1,8 +1,7 @@
 import { Labyrinth } from '../labyrinth'
+import { Distance } from './path'
 
 type PathNotFound = -1
-type Distance = number
-
 type PathFinderOutput = Distance | PathNotFound
 
 export interface PathFinderService {
