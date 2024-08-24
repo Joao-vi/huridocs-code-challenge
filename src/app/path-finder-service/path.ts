@@ -25,9 +25,10 @@ export class Path {
   }
 
   move(direction: Direction) {
-    this.props.y += direction.y
-    this.props.x += direction.x
-
-    this.props.distance += 1
+    return new Path({
+      x: this.x + direction.x,
+      y: this.y + direction.y,
+      distance: this.distance + 1,
+    })
   }
 }
