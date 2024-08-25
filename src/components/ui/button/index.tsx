@@ -11,7 +11,7 @@ type Variant = VariantProps<typeof variants>
 
 const variants = cva(
   [
-    'm-4 flex items-center gap-2 py-1.5 px-3 rounded-md transition-all',
+    'flex items-center gap-2 py-1.5 px-3 rounded-md transition-all',
     'ring-offset-2 ring-0 ring-transparent ring-offset-white/0 focus:ring-offset-white focus:ring-2 focus:ring-green-300',
   ],
   {
