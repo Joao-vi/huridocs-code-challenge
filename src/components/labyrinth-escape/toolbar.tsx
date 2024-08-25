@@ -8,6 +8,7 @@ export const Toolbar = () => {
   return (
     <div className="flex items-center gap-3 p-3 border border-zinc-200 rounded-xl">
       <Button
+        data-testid="start_button"
         variant="secondary"
         onClick={() => changeCell('S')}
       >
@@ -26,13 +27,17 @@ export const Toolbar = () => {
         Wall
       </Button>
       <Button
+        data-testid="exit_button"
         variant="secondary"
         onClick={() => changeCell('E')}
       >
         Exit
       </Button>
 
-      <Button type="submit">
+      <Button
+        data-testid="submit_button"
+        type="submit"
+      >
         Solve it
         <MagicWand weight="bold" />
       </Button>
