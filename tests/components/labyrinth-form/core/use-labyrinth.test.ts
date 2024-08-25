@@ -19,6 +19,12 @@ describe('useLabyrinth', () => {
     expect(result.current.labyrinth.length).toBe(prevLength + 1)
   })
 
+  test('isSelected should return true the given coordinate is selected', () => {
+    const { result } = renderHook(() => useLabyrinth())
+    expect(result.current.selectedCell).toEqual({ x: 0, y: 0 })
+    expect(result.current.isSelected({ x: 0, y: 0 })).toBeTruthy()
+  })
+
   test('It should correctly remove a Row of Cells', () => {
     const { result } = renderHook(() => useLabyrinth())
 
