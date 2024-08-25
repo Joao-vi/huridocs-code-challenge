@@ -32,7 +32,7 @@ export const Toolbar = () => {
         Exit
       </Button>
 
-      <Button>
+      <Button type="submit">
         Solve it
         <MagicWand weight="bold" />
       </Button>
