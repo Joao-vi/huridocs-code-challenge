@@ -1,5 +1,5 @@
 import { VariantProps, cva } from 'class-variance-authority'
-import { ComponentProps } from 'react'
+import { ComponentProps, ForwardedRef, forwardRef } from 'react'
 
 import { cn } from '../../../utils/cn'
 
@@ -15,9 +15,12 @@ const variants = cva([
   'hover:bg-neutral-100',
 ])
 
-export const Input = ({ className, ...props }: InputProps) => (
-  <input
-    {...props}
-    className={cn(variants({ className }))}
-  />
+export const Input = forwardRef(
+  ({ className, ...props }: InputProps, ref: ForwardedRef<HTMLInputElement | null>) => (
+    <input
+      {...props}
+      ref={ref}
+      className={cn(variants({ className }))}
+    />
+  )
 )
