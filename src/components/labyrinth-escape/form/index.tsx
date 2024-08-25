@@ -19,6 +19,8 @@ export const Form = () => {
             <SuccessMessage>
               The algorithm has successfully solved the maze! It took {steps}
               {steps === 1 ? ' step' : ' steps'} to find the Exit.
+              <br />
+              Note: This is the shortest path to the Exit.
             </SuccessMessage>
           )}
 
