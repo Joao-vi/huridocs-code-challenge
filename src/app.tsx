@@ -14,6 +14,5 @@ const Counter = () => {
 export const App = () => (
   <div>
     <Counter />
-    App
   </div>
 )
