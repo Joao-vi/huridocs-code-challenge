@@ -1,6 +1,6 @@
 import { describe, expect, test } from 'vitest'
 import { renderHook, act } from '@testing-library/react-hooks'
-import { useLabyrinth } from '../../../../src/components/labyrinth-form/core/use-labyrinth'
+import { useLabyrinth } from '../../../../src/components/labyrinth-escape/core/use-labyrinth'
 
 describe('useLabyrinth', () => {
   test('It should start with correct selected Cell', () => {

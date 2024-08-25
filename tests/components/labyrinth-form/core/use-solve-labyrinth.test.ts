@@ -1,11 +1,11 @@
 import { act, renderHook } from '@testing-library/react-hooks'
 import { describe, expect, test } from 'vitest'
-import { useSolveLabyrinth } from '../../../../src/components/labyrinth-form/core/use-solve-labyrinth'
 import {
   INVALID_LABYRINTH,
   THREE_STEPS_LABYRINTH,
   UNSOLVABLE_LABYRINTH,
 } from '../../../app/services/path-finder-service/bfs-path-finder-service.test'
+import { useSolveLabyrinth } from '../../../../src/components/labyrinth-escape/core/use-solve-labyrinth'
 
 describe('useSolveLabyrinth', () => {
   test('When given a solvable Labyrinth, it should populate steps state', () => {
