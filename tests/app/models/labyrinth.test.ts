@@ -1,4 +1,6 @@
-import { CellNotFoundError, Cells, Labyrinth } from '../../src/app/models/labyrinth'
+import { describe, expect, test } from 'vitest'
+
+import { Cells, Labyrinth, CellNotFoundError } from '../../../src/app/models/labyrinth'
 
 const cells: Cells = [
   ['S', '0', '1', '0', 'E'],

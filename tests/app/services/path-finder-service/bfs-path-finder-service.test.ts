@@ -1,5 +1,7 @@
-import { CellNotFoundError, Cells, Labyrinth } from '../../../src/app/models/labyrinth'
-import { BFSPathFinderService } from '../../../src/app/services/path-finder/bfs-path-finder-service'
+import { describe, test, expect } from 'vitest'
+
+import { Cells, Labyrinth, CellNotFoundError } from '../../../../src/app/models/labyrinth'
+import { BFSPathFinderService } from '../../../../src/app/services/path-finder/bfs-path-finder-service'
 
 const THEE_STEPS_LABYRINTH: Cells = [
   ['1', 'S', '0', '0', 'E'],

@@ -1,5 +1,7 @@
-import { DIRECTIONS } from '../../../src/app/models/direction'
-import { Path } from '../../../src/app/services/path-finder/path'
+import { describe, test, expect } from 'vitest'
+
+import { DIRECTIONS } from '../../../../src/app/models/direction'
+import { Path } from '../../../../src/app/services/path-finder/path'
 
 describe('Path class', () => {
   test('When I move DOWN, it should update the Coordinate and Distance', () => {
