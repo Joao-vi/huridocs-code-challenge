@@ -43,6 +43,9 @@ export const useLabyrinth = () => {
 
   const selectCell = (coordinate: Coordinate) => setSelectedCell(coordinate)
 
+  const isSelected = (coordinate: Coordinate): boolean =>
+    selectedCell.x === coordinate.x && selectedCell.y === coordinate.y
+
   return {
     selectedCell,
     labyrinth,
@@ -52,5 +55,6 @@ export const useLabyrinth = () => {
     removeCells,
     selectCell,
     nextCell,
+    isSelected,
   }
 }
