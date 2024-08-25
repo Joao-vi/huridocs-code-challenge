@@ -1,6 +1,6 @@
 import { Coordinate } from './coordinate'
 
-type Cell = string
+export type Cell = string
 
 export type Cells = Cell[][]
 
